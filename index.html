@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alyssa Fagan - Personal Website</title>
+    <button id="welcome-button">Click Me</button>
     <style>
     body {
         font-family: Arial, sans-serif;
@@ -97,8 +98,19 @@
             </p>
         </section>
     </div>
+    <script>
+    // Function to display a welcome message
+    function displayWelcomeMessage() {
+        alert('Welcome to my personal website!');
+    }
+
+    // Attach a click event listener to a button
+    const welcomeButton = document.getElementById('welcome-button');
+    welcomeButton.addEventListener('click', displayWelcomeMessage);
+</script>
 </body>
 </html>
+
 
 
 
