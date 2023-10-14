@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alyssa Fagan - Personal Website</title>
     <style>
-        body {
+    body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
@@ -13,7 +13,7 @@
     }
 
     header {
-        background-color: #8cbfa4;
+        background-color: #333;
         color: #fff;
         text-align: center;
         padding: 20px;
@@ -32,10 +32,12 @@
         max-width: 800px;
         margin: 0 auto;
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     section {
-        margin-bottom: 20px;
         padding: 20px;
         background-color: #fff;
         border: 1px solid #ddd;
@@ -52,7 +54,23 @@
         color: #007BFF;
         text-decoration: none;
     }
-</style>   
+
+    /* Flexbox for sections in the container */
+    .container section {
+        flex: 1;
+    }
+
+    /* Media query for responsiveness */
+    @media (min-width: 768px) {
+        .container {
+            flex-direction: row;
+        }
+        section {
+            width: calc(33.33% - 20px);
+            margin: 0 10px;
+        }
+    }
+</style>
 </head>
 <body>
     <header>
